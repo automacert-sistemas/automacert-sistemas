@@ -32,8 +32,8 @@ export default function Header() {
             {navLinks.map(({ label, id }, index) => (
               <Link
                 key={index}
-                href={`#${id}`}
-                className='hover:text-primary transition-all'
+                href={id}
+                className='hover:text-primary transition-all text-base'
               >
                 {label}
               </Link>
