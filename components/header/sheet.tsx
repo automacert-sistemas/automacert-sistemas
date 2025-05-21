@@ -38,7 +38,7 @@ export default function HeaderSheet({ triggerClassname }: Props) {
       <SheetTrigger asChild className={triggerClassname}>
         <Button variant="outline"><Menu className="size-4" /></Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="data-[state=closed]:animate-out data-[state=closed]:slide-out-to-right">
         <SheetHeader>
           <SheetTitle className="text-primary">
             Menu

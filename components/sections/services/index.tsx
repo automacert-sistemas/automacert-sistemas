@@ -13,7 +13,7 @@ export default function ServicesSection() {
         </div>
 
         {/* cards */}
-        <div className="w-full grid grid-cols-1 grid-rows-4 sm:grid-cols-2 md:grid-rows-2 xl:grid-cols-4 xl:grid-rows-1 place-items-center xl:place-items-start gap-8">
+        <div className="w-full grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 xl:grid-cols-4 xl:grid-rows-1 place-items-center xl:place-items-start gap-8">
           {services.map(({iconName, title, description}, index) => (
             <ServiceCard key={index} icon={iconName} title={title} description={description}/>  
           ))}
