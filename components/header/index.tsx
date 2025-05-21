@@ -40,7 +40,7 @@ export default function Header() {
             ))}
           </nav>
           <Button asChild>
-            <Link href={'/'}>Fale conosco
+            <Link href={'https://wa.link/1xo16t'}>Fale conosco
             </Link>
           </Button>
         </div>

@@ -76,7 +76,7 @@ export default function HeaderSheet({ triggerClassname }: Props) {
         </div>
         <SheetFooter>
           <Button asChild onClick={toggleModal}>
-            <Link href={'/'} target="_blank">
+            <Link href={'https://wa.link/1xo16t'} target="_blank">
               Fale conosco
               <ExternalLink className="size-4 ml-4" />
             </Link>
