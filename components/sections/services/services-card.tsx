@@ -1,23 +1,25 @@
 
 // components
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { File } from 'lucide-react'
+
+// icons
+import { DynamicIcon, type dynamicIconImports } from 'lucide-react/dynamic'
 
 interface Props {
-  icon?: string
+  icon: keyof typeof dynamicIconImports
   title: string
   description: string
 }
 
 export default function ServiceCard({ title, icon, description }: Props) {
   return (
-    <Card className="w-[350px] max-w-full px-7 py-8">
+    <Card className="w-[350px] max-w-full h-[350px] px-6 py-8 shadow">
       <CardHeader className='flex items-center justify-center'>
-        <File className='size-16 text-primary' />
+        <DynamicIcon name={icon} className='size-16 text-primary' />
       </CardHeader>
       <CardContent className='w-full flex flex-col items-center justify-center gap-5'>
         <h4 className='text-xl font-semibold text-slate-900'>{title}</h4>
-        <p className='text-slate-700'>{description}</p>
+        <p className='text-slate-700 text-justify text-base'>{description}</p>
       </CardContent>
     </Card>
   )
