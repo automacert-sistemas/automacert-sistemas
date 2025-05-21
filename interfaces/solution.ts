@@ -6,4 +6,5 @@ export default interface Solution {
   title: string
   description: string
   benefits: string[]
+  href: string
 }

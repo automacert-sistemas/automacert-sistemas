@@ -16,8 +16,9 @@ export const solutions: Solution[] = [
     'Gestão completa para Bares / Restaurantes', 
     'PDV Móvel para celulares', 
     'Modular: Cada aplicativo dividido separadamente', 
-    'Módulo web, para gestão de qualquer lugar'
-  ]
+    'Módulo web, para gestão de qualquer lugar',
+  ],
+  href: 'https://wa.link/q57ed7'
  },
  {
   image: sti3,
@@ -30,6 +31,7 @@ export const solutions: Solution[] = [
     'PDV Móvel integrado a Smartphones e Maquininhas STONE',
     'All-In-One, todas as funcionalidades em um app só',
     'Gerenciamento de licenças internas mais completo'
-  ]
+  ],
+  href: 'https://wa.link/i1rcqr'
  }
 ]

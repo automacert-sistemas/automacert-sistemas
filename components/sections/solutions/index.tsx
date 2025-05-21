@@ -13,6 +13,7 @@ import type Solution from "@/interfaces/solution"
 
 // icons
 import { BadgeCheck } from "lucide-react"
+import Link from "next/link"
 
 export default function SolutionsSection() {
   const [selectedSolution, setSelectedSolution] = useState<string>(solutions[0].solution)
@@ -45,10 +46,10 @@ export default function SolutionsSection() {
           </div>
 
           {/* infos */}
-          <div className="w-full lg:w-1/2 h-full flex flex-col items-center justify-start lg:items-start gap-2.5 transition-all">
-            <h2 className="text-2xl lg:text-3xl text-primary font-semibold">{solutionData.title}</h2>
-            <p className="text-lg text-slate-700">{solutionData.description}</p>
-            <div className="flex flex-col w-full py-2 items-start justify-center gap-3">
+          <div className="w-full lg:w-1/2 h-full flex flex-col items-center justify-start lg:items-start gap-2.5">
+            <h2 className="text-2xl lg:text-3xl text-primary font-semibold transition-all">{solutionData.title}</h2>
+            <p className="text-lg text-slate-700 transition-all">{solutionData.description}</p>
+            <div className="flex flex-col w-full py-2 items-start justify-center gap-3 transition-all">
               {solutionData.benefits.map((benefit, index) => (
                 <div key={index} className="flex items-center justify-center gap-2.5">
                   <BadgeCheck className="size-6 text-primary"/>
@@ -57,7 +58,11 @@ export default function SolutionsSection() {
               ))}
             </div>
 
-            <Button className="text-lg cursor-pointer m-auto">Adquirir solução</Button>
+            <Button className="text-lg cursor-pointer m-auto shadow" asChild>
+              <Link href={solutionData.href} target="_blank">
+                Adquirir solução
+              </Link>
+            </Button>
           </div>
         </div>
       </div>
