@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Logo from '@/public/logos/logo-02.png'
 
 // links
-import { navLinks } from './links'
+import { navLinks } from '@/data/nav-links'
 
 // components
 import { Button } from '../ui/button'

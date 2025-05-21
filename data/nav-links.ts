@@ -1,10 +1,4 @@
-import type { dynamicIconImports } from "lucide-react/dynamic";
-
-interface Links {
-  label: string;
-  id: string
-  iconName: keyof typeof dynamicIconImports
-}
+import type Links from "@/interfaces/links";
 
 export const navLinks: Links[] = [
   { label: 'Serviços', id: '#services', iconName: 'wrench' },

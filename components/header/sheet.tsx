@@ -1,4 +1,6 @@
 'use client'
+import Link from "next/link";
+import { useState } from "react";
 
 // components
 import { Button } from "@/components/ui/button";
@@ -11,16 +13,15 @@ import {
   SheetTitle,
   SheetTrigger
 } from "@/components/ui/sheet";
-
-// assets
-import { ExternalLink, Home, Menu } from "lucide-react";
 import { Separator } from "../ui/separator";
 
+
 // icons
+import { ExternalLink, Home, Menu } from "lucide-react";
 import { DynamicIcon } from 'lucide-react/dynamic';
-import Link from "next/link";
-import { useState } from "react";
-import { navLinks } from "./links";
+
+// data
+import { navLinks } from "@/data/nav-links";
 
 interface Props {
   triggerClassname?: string
@@ -68,7 +69,7 @@ export default function HeaderSheet({ triggerClassname }: Props) {
               asChild
             >
               <Link href={id}>
-                <DynamicIcon name={iconName} className="size-4 text-primary" />
+                <DynamicIcon name={iconName || 'link'} className="size-4 text-primary" />
                 {label}
               </Link>
             </Button>
