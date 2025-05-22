@@ -18,11 +18,12 @@ export default function Footer() {
         {/* main content */}
         <div className="w-full grid grid-cols-1 grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 items-center lg:items-start justify-center gap-8">
           {/* image */}
-          <div className='w-52 lg:w-28 mx-auto lg:mx-0'>
-            <Image src={Logo}  alt='' className='hidden lg:flex w-full object-contain'/>
-
-            <Image src={smLogo}  alt='' className='lg:hidden w-full object-contain'/>
-          </div>
+            <div className='w-52 lg:w-28 mx-auto lg:mx-0'>
+              <Link href={'/'}>
+                <Image src={Logo}  alt='' className='hidden lg:flex w-full object-contain'/>
+                <Image src={smLogo}  alt='' className='lg:hidden w-full object-contain'/>
+              </Link>
+            </div>
 
           {/* links */}
           <div className='flex flex-col items-center justify-center lg:items-start gap-5'>
