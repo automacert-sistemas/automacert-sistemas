@@ -7,7 +7,7 @@ import Sti3 from '@/public/hero-section/sti3.png'
 
 export default function HeroSection() {
   return (
-    <section className='min-w-full grid place-items-center p-section' id="home">
+    <section className='min-w-full grid lg:min-h-screen place-items-center p-section' id="home">
       {/* content */}
       <div className="min-h-full w-full max-w-container flex items-center justify-center gap-20">
         <div className="flex flex-col items-center justify-center gap-3 lg:basis-1/2">

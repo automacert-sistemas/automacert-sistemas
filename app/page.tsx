@@ -14,7 +14,7 @@ export default function Home() {
       <Header />
 
       {/* Sections */}
-      <main className="min-w-full grid grid-rows-[1fr_auto_1fr_1fr]">
+      <main className="min-w-full grid grid-rows-[auto_auto_1fr_1fr]">
         <HeroSection />
         <ServicesSection />
         <SolutionsSection />
