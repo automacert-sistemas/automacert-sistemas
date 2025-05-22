@@ -3,7 +3,7 @@ import ServiceCard from "./services-card"
 
 export default function ServicesSection() {
   return (
-    <section className='min-w-full flex items-center justify-center py-9 px-7 bg-secondary text-secondary-foreground' id='services'>
+    <section className='min-w-full flex items-center justify-center p-section bg-secondary text-secondary-foreground' id='services'>
       {/* content */}
       <div className="flex flex-col items-center lg:items-start justify-center w-full max-w-container gap-8">
         {/* header */}

@@ -1,6 +1,7 @@
 // components
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import CertificateSection from "@/components/sections/certificates";
 
 // sections
 import HeroSection from "@/components/sections/hero-section";
@@ -13,10 +14,11 @@ export default function Home() {
       <Header />
 
       {/* Sections */}
-      <main className="min-w-full grid grid-rows-[1fr_auto_1fr]">
+      <main className="min-w-full grid grid-rows-[1fr_auto_1fr_1fr]">
         <HeroSection />
         <ServicesSection />
         <SolutionsSection />
+        <CertificateSection />
       </main>
 
       <Footer />

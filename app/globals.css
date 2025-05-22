@@ -42,7 +42,8 @@
   --radius-xl: calc(var(--radius) + 4px);
 
   /* customs */
-  --spacing-container: 1440px
+  --spacing-container: 1440px;
+  --spacing-section: calc(var(--spacing) * 8);
 }
 
 :root {

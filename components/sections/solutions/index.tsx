@@ -27,7 +27,7 @@ export default function SolutionsSection() {
   }
 
   return (
-    <section className="min-w-full min-h-full flex items-center justify-center px-7 py-6" id="solutions">
+    <section className="min-w-full min-h-full flex items-center justify-center px-section py-6" id="solutions">
       {/* content */}
       <div className="size-full max-w-container flex flex-col items-center justify-center">
         {/* header */}
@@ -37,9 +37,9 @@ export default function SolutionsSection() {
         </div>
 
         {/* main */}
-        <div className="flex flex-col md:flex-row items-center justify-center size-full py-8 gap-16">
+        <div className="flex flex-col md:flex-row items-center justify-center size-full py-8 gap-14 md:gap-16">
           {/* images */}
-          <div className="w-full lg:w-1/2 h-full flex md:flex-col items-center justify-center p-4 lg:p-0 gap-10 lg:gap-16 bg-slate-100 rounded-2xl shadow">
+          <div className="w-full lg:w-1/2 md:h-full flex md:flex-col items-center justify-center py-8 px-4 md:p-4 lg:p-0 gap-4 lg:gap-16 bg-slate-100 rounded-2xl shadow">
           {solutions.map(({image, solution}, index) => (
             <SolutionCard 
               key={index} 

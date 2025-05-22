@@ -18,7 +18,7 @@ export const solutions: Solution[] = [
     'Modular: Cada aplicativo dividido separadamente', 
     'Módulo web, para gestão de qualquer lugar',
   ],
-  href: 'https://wa.link/q57ed7'
+  href: 'https://wa.link/royfij'
  },
  {
   image: sti3,
@@ -32,6 +32,6 @@ export const solutions: Solution[] = [
     'All-In-One, todas as funcionalidades em um app só',
     'Gerenciamento de licenças internas mais completo'
   ],
-  href: 'https://wa.link/i1rcqr'
+  href: 'https://wa.link/wrc50b'
  }
 ]
