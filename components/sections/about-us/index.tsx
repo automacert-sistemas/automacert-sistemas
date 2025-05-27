@@ -14,7 +14,7 @@ import Automacert from '@/public/about-us-section/automacert.png';
 
 export default function AboutUsSection() {
   return (
-    <section className="min-w-full min-h-full flex items-center justify-center p-section py-6 bg-slate-50" id="aboutUs">
+    <section className="min-w-full min-h-full flex items-center justify-center p-section py-6 bg-slate-50 scroll-mt-20" id="aboutUs">
       {/* content */}
       <div className="size-full max-w-container flex items-center justify-center gap-14">
         {/* stats */}

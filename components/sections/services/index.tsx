@@ -3,7 +3,7 @@ import ServiceCard from "./services-card"
 
 export default function ServicesSection() {
   return (
-    <section className='min-w-full flex items-center justify-center p-section bg-secondary text-secondary-foreground' id='services'>
+    <section className='min-w-full flex items-center justify-center p-section bg-secondary text-secondary-foreground scroll-mt-20' id='services'>
       {/* content */}
       <div className="flex flex-col items-center lg:items-start justify-center w-full max-w-container gap-8">
         {/* header */}
@@ -14,8 +14,8 @@ export default function ServicesSection() {
 
         {/* cards */}
         <div className="w-full grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 xl:grid-cols-4 xl:grid-rows-1 place-items-center xl:place-items-start gap-8">
-          {services.map(({iconName, title, description}, index) => (
-            <ServiceCard key={index} icon={iconName} title={title} description={description}/>  
+          {services.map(({ iconName, title, description }, index) => (
+            <ServiceCard key={index} icon={iconName} title={title} description={description} />
           ))}
         </div>
       </div>

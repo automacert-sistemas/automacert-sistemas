@@ -14,7 +14,7 @@ import HeaderSheet from './sheet'
 
 export default function Header() {
   return (
-    <div className="min-w-full h-20 grid place-items-center sticky top-0 bg-background">
+    <div className="min-w-full h-20 grid place-items-center sticky top-0 z-50 bg-background">
       {/* content */}
       <div className="h-full w-full max-w-container px-7 py-2 flex items-center justify-between">
         {/* logo */}

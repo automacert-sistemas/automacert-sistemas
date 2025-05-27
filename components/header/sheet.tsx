@@ -1,5 +1,6 @@
 'use client'
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 // components
@@ -29,8 +30,14 @@ interface Props {
 
 export default function HeaderSheet({ triggerClassname }: Props) {
   const [isOpen, setIsOpen] = useState<boolean>(false)
+  const { push } = useRouter()
 
   const toggleModal = () => setIsOpen(!isOpen)
+
+  function handleNavigation(href: string) {
+    push(`/${href}`)
+    toggleModal()
+  }
 
   return (
 
@@ -65,13 +72,10 @@ export default function HeaderSheet({ triggerClassname }: Props) {
               key={index}
               variant={'outline'}
               className="w-full font-normal text-primary"
-              onClick={toggleModal}
-              asChild
+              onClick={() => handleNavigation(id)}
             >
-              <Link href={id}>
-                <DynamicIcon name={iconName || 'link'} className="size-4 text-primary" />
-                {label}
-              </Link>
+              <DynamicIcon name={iconName || 'link'} className="size-4 text-primary" />
+              {label}
             </Button>
           ))}
         </div>

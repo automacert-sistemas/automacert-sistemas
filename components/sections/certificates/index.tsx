@@ -24,7 +24,7 @@ const certificateData: CertificateCardProps[] = [
 
 export default function CertificateSection() {
   return (
-    <section className="min-w-full min-h-full flex items-center justify-center p-section md:py-6 bg-secondary" id="certificates">
+    <section className="min-w-full min-h-full flex items-center justify-center p-section md:py-6 bg-secondary scroll-mt-20" id="certificates">
       {/* container */}
       <div className="size-full max-w-container flex flex-col items-center justify-center gap-10">
         {/* header */}
@@ -38,18 +38,18 @@ export default function CertificateSection() {
           {/* certificate-info */}
           <div className="flex flex-col items-center justify-center size-full md:w-2/3 lg:w-1/2 gap-6 md:gap-8">
             <p className="text-base max-lg:text-center lg:text-xl leading-8 text-slate-100">
-              O certificado digital é a sua identidade no mundo digital. Ele funciona como uma carteira de identidade eletrônica que garante que você é você mesmo ao assinar documentos online, 
+              O certificado digital é a sua identidade no mundo digital. Ele funciona como uma carteira de identidade eletrônica que garante que você é você mesmo ao assinar documentos online,
               acessar sistemas oficiais e realizar transações com segurança e validade jurídica. Existem dois tipos de certificados digitais, os certificados A1 e os A3, veja abaixo as características de cada um.
             </p>
 
             {/* cards */}
             <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8">
               {certificateData.map((data, index) => (
-                <CertificateCard key={index} {...data}/>
+                <CertificateCard key={index} {...data} />
               ))}
             </div>
 
-            <Button 
+            <Button
               variant={'background'}
               className="text-lg cursor-pointer max-md:mt-4"
               asChild
@@ -62,7 +62,7 @@ export default function CertificateSection() {
 
           {/* image */}
           <div className="hidden lg:flex w-1/2 h-full items-center justify-center">
-            <Image 
+            <Image
               src={certImg}
               alt=""
               className="w-2/3 object-contain rounded-2xl"

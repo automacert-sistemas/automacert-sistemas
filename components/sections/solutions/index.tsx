@@ -27,7 +27,7 @@ export default function SolutionsSection() {
   }
 
   return (
-    <section className="min-w-full min-h-full flex items-center justify-center px-section py-6" id="solutions">
+    <section className="min-w-full min-h-full flex items-center justify-center px-section py-6 scroll-mt-20" id="solutions">
       {/* content */}
       <div className="size-full max-w-container flex flex-col items-center justify-center">
         {/* header */}
