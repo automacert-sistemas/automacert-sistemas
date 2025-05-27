@@ -22,6 +22,9 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
+        whatsapp: "bg-whatsapp text-whatsapp-foreground shadow-xs hover:bg-whatsapp/80",
+        instagram: "bg-instagram text-instagram-foreground shadow-xs hover:bg-instagram/80",
+        google: "bg-google text-google-foreground shadow-xs hover:bg-google/80"
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

@@ -32,6 +32,12 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-whatsapp: var(--whatsapp);
+  --color-whatsapp-foreground: var(--whatsapp-foreground);
+  --color-instagram: var(--instagram);
+  --color-instagram-foreground: var(--instagram-foreground);
+  --color-google: var(--google);
+  --color-google-foreground: var(--google-foreground);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -58,6 +64,12 @@
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(41.26% 0.093 160.04);
   --secondary-foreground: oklch(1 0 0);
+  --whatsapp:oklch(76.10% 0.201 149.74);
+  --whatsapp-foreground: oklch(1 0 0);
+  --instagram: oklch(60.46% 0.213 6.78);
+  --instagram-foreground: oklch(1 0 0);
+  --google: oklch(63.18% 0.179 259.23);
+  --google-foreground: oklch(1 0 0);
   --muted: oklch(0.968 0.007 247.896);
   --muted-foreground: oklch(0.554 0.046 257.417);
   --accent: oklch(0.968 0.007 247.896);
@@ -92,6 +104,12 @@
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(41.26% 0.093 160.04);
   --secondary-foreground: oklch(1 0 0);
+  --whatsapp:oklch(0.761 0.2015 149.74);
+  --whatsapp-foreground: oklch(1 0 0);
+  --instagram: oklch(0.6046 0.2129 6.78);
+  --instagram-foreground: oklch(1 0 0);
+  --google: oklch(0.6318 0.1795 259.23);
+  --google-foreground: oklch(1 0 0);
   --muted: oklch(0.274 0.006 286.033);
   --muted-foreground: oklch(0.705 0.015 286.067);
   --accent: oklch(0.274 0.006 286.033);

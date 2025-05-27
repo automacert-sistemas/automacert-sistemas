@@ -39,15 +39,15 @@ export default function SolutionsSection() {
         {/* main */}
         <div className="flex flex-col md:flex-row items-center justify-center size-full py-8 gap-14 md:gap-16">
           {/* images */}
-          <div className="w-full lg:w-1/2 md:h-full flex md:flex-col items-center justify-center py-8 px-4 md:p-4 lg:p-0 gap-4 lg:gap-16 bg-slate-100 rounded-2xl shadow">
-          {solutions.map(({image, solution}, index) => (
-            <SolutionCard 
-              key={index} 
-              image={image} 
-              onClick={() => handleClick(solution)} 
-              isActive={solution === selectedSolution}
-            />
-          ))}
+          <div className="w-full lg:w-1/2 md:h-full flex md:flex-col items-center justify-center py-8 px-4 md:p-4 gap-4 lg:gap-16 bg-slate-100 rounded-2xl shadow">
+            {solutions.map(({ image, solution }, index) => (
+              <SolutionCard
+                key={index}
+                image={image}
+                onClick={() => handleClick(solution)}
+                isActive={solution === selectedSolution}
+              />
+            ))}
           </div>
 
           {/* infos */}
@@ -57,7 +57,7 @@ export default function SolutionsSection() {
             <div className="flex flex-col w-full py-2 items-start justify-center gap-3 transition-all">
               {solutionData.benefits.map((benefit, index) => (
                 <div key={index} className="flex items-center justify-center min-md:max-lg:gap-2 gap-2.5">
-                  <BadgeCheck className="min-md:max-lg:size-5 size-6 text-primary"/>
+                  <BadgeCheck className="min-md:max-lg:size-5 size-6 text-primary" />
                   <span className="min-md:max-lg:text-sm text-base font-bold text-primary">{benefit}</span>
                 </div>
               ))}

@@ -1,5 +1,4 @@
 import { FlatCompat } from "@eslint/eslintrc";
-import prettierConfig from 'eslint-config-prettier';
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -12,14 +11,6 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
-
-  // Prettier no fim da lista pra desligar conflitos
-  {
-    name: "prettier-disable-conflicts",
-    rules: {
-      ...prettierConfig.rules,
-    },
-  },
 ];
 
 export default eslintConfig;
