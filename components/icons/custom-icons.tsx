@@ -1,8 +1,6 @@
 import type { LucideProps } from 'lucide-react'
 
-interface Props extends LucideProps { }
-
-export function Whatsapp({ size = 24, color = 'currentColor', ...props }: Props) {
+export function Whatsapp({ size = 24, color = 'currentColor', ...props }: LucideProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +15,7 @@ export function Whatsapp({ size = 24, color = 'currentColor', ...props }: Props)
   )
 }
 
-export function Instagram({ size = 24, color = 'currentColor', ...props }: Props) {
+export function Instagram({ size = 24, color = 'currentColor', ...props }: LucideProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +31,7 @@ export function Instagram({ size = 24, color = 'currentColor', ...props }: Props
   )
 }
 
-export function GoogleMaps({ size = 24, color = 'currentColor', ...props }: Props) {
+export function GoogleMaps({ size = 24, color = 'currentColor', ...props }: LucideProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
