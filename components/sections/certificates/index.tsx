@@ -29,8 +29,8 @@ export default function CertificateSection() {
       <div className="size-full max-w-container flex flex-col items-center justify-center gap-10">
         {/* header */}
         <div className="flex flex-col items-center justify-center lg:items-start lg:justify-start w-full gap-2">
-          <h2 className="max-lg:text-center text-xl lg:text-3xl leading-8 md:leading-9 font-semibold text-background">Certificado Digital</h2>
-          <p className="max-lg:text-center text-lg lg:text-xl text-slate-50 leading-6 md:leading-7">Saiba mais sobre o nosso serviço de certificado digital</p>
+          <h2 className="max-lg:text-center text-2xl lg:text-3xl leading-8 md:leading-9 font-semibold text-background">Certificado Digital</h2>
+          <p className="max-lg:text-center text-xl text-slate-50 leading-6 md:leading-7">Saiba mais sobre o nosso serviço de certificado digital</p>
         </div>
 
         {/* content */}

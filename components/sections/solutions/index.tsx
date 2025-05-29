@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link"
 import { useState } from "react"
 
 // components
@@ -13,7 +14,6 @@ import type Solution from "@/interfaces/solution"
 
 // icons
 import { BadgeCheck } from "lucide-react"
-import Link from "next/link"
 
 export default function SolutionsSection() {
   const [selectedSolution, setSelectedSolution] = useState<string>(solutions[0].solution)
@@ -32,8 +32,8 @@ export default function SolutionsSection() {
       <div className="size-full max-w-container flex flex-col items-center justify-center">
         {/* header */}
         <div className="w-full flex flex-col items-center justify-center lg:items-start gap-2">
-          <h2 className="text-xl lg:text-3xl text-primary font-semibold">Soluções</h2>
-          <h4 className="text-lg lg:text-xl text-slate-700">Saiba mais sobre as principais soluções que nós oferecemos</h4>
+          <h2 className="text-2xl lg:text-3xl text-primary font-semibold">Soluções</h2>
+          <h4 className="text-lg max-lg:text-center lg:text-xl text-slate-700">Saiba mais sobre as principais soluções que nós oferecemos</h4>
         </div>
 
         {/* main */}

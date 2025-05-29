@@ -8,8 +8,8 @@ export default function ServicesSection() {
       <div className="flex flex-col items-center lg:items-start justify-center w-full max-w-container gap-8">
         {/* header */}
         <div className="flex flex-col items-center justify-center xl:items-start min-w-full gap-2.5">
-          <h2 className="text-3xl font-semibold">Serviços</h2>
-          <h4 className="text-xl font-regular text-slate-50">O que oferecemos para os nossos clientes</h4>
+          <h2 className="text-2xl lg:text-3xl font-semibold">Serviços</h2>
+          <h4 className="text-xl max-lg:text-center font-regular text-slate-50">O que oferecemos para os nossos clientes</h4>
         </div>
 
         {/* cards */}

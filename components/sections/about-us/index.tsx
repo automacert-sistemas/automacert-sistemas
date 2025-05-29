@@ -25,7 +25,7 @@ export default function AboutUsSection() {
             <h1 className="w-full text-4xl lg:text-6xl leading-14 lg:leading-16 font-bold text-primary">Conheça mais sobre nossa empresa</h1>
           </div>
 
-          <p className="text-center lg:text-justify text-lg text-slate-500 leading-7 w-full">
+          <p className="text-center lg:text-justify text-base sm:text-lg text-slate-500 leading-7 w-full">
             Na Automacert Sistemas, somos especialistas em soluções para transformar a gestão do seu negócio.
             Atuamos com a revenda de softwares de gestão comercial, oferecendo ferramentas robustas, intuitivas e eficientes para otimizar processos e aumentar a produtividade.
             Além disso, somos referência em certificação digital, garantindo segurança e agilidade nas transações eletrônicas da sua empresa.
@@ -41,27 +41,30 @@ export default function AboutUsSection() {
             <StatsCard title="+ 10" description="Anos de experiência" />
           </div>
 
-          <div className="xl:hidden flex flex-col md:flex-row items-center justify-center gap-8">
-            <Button variant={'whatsapp'} className="sm:text-xl sm:py-6" asChild>
-              <Link href="https://wa.link/ovd7o7" target="_blank">
-                <Whatsapp className="size-6 sm:size-7" />
-                Whatsapp
-              </Link>
-            </Button>
+          <div className="xl:hidden flex flex-col items-center justify-center gap-4">
+            <h4 className="text-lg font-semibold text-primary my-3">Saiba onde nos encontrar</h4>
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+              <Button variant={'whatsapp'} className="sm:text-xl sm:py-6 max-sm:w-full" asChild>
+                <Link href="https://wa.link/ovd7o7" target="_blank">
+                  <Whatsapp className="size-6 sm:size-7" />
+                  Whatsapp
+                </Link>
+              </Button>
 
-            <Button variant={'instagram'} className="sm:text-xl sm:py-6" asChild>
-              <Link href="https://www.instagram.com/automacert_sistemas?igsh=MW5uNnFlN2E2anZucw==" target="_blank">
-                <Instagram className="size-6 sm:size-7" />
-                Instagram
-              </Link>
-            </Button>
+              <Button variant={'instagram'} className="sm:text-xl sm:py-6 max-sm:w-full" asChild>
+                <Link href="https://www.instagram.com/automacert_sistemas?igsh=MW5uNnFlN2E2anZucw==" target="_blank">
+                  <Instagram className="size-6 sm:size-7" />
+                  Instagram
+                </Link>
+              </Button>
 
-            <Button variant={'google'} className="sm:text-xl sm:py-6" asChild>
-              <Link href="https://maps.app.goo.gl/NhY8WkTB2X29Towg8" target="_blank">
-                <GoogleMaps className="size-6 sm:size-7" />
-                Google Maps
-              </Link>
-            </Button>
+              <Button variant={'google'} className="sm:text-xl sm:py-6 max-sm:w-full" asChild>
+                <Link href="https://maps.app.goo.gl/NhY8WkTB2X29Towg8" target="_blank">
+                  <GoogleMaps className="size-6 sm:size-7" />
+                  Google Maps
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
 

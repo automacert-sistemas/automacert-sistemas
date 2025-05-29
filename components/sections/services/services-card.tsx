@@ -13,7 +13,7 @@ interface Props {
 
 export default function ServiceCard({ title, icon, description }: Props) {
   return (
-    <Card className="w-[350px] max-w-full h-[350px] px-6 py-8 shadow">
+    <Card className="w-[350px] max-w-full sm:h-[350px] px-6 py-8 shadow">
       <CardHeader className='flex items-center justify-center'>
         <DynamicIcon name={icon} className='size-14 lg:size-16 text-primary' />
       </CardHeader>
