@@ -1,5 +1,3 @@
-'use client'
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,12 +9,9 @@ import StatsCard from "./stats-card";
 import { GoogleMaps, Instagram, Whatsapp } from "@/components/icons/custom-icons";
 
 // assets
-import useInView from "@/hooks/useInView";
 import Automacert from '@/public/about-us-section/automacert.png';
 
-
 export default function AboutUsSection() {
-  const { ref, isInView } = useInView({ threshold: 0.3 })
 
   return (
     <section className="min-w-full min-h-full flex items-center justify-center p-section py-6 bg-slate-50 scroll-mt-20" id="aboutUs">
