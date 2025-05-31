@@ -1,8 +1,7 @@
 'use client'
 
-import { motion } from 'framer-motion'
-
-import type { ReactNode } from "react"
+import { motion, useAnimation, useInView } from 'framer-motion'
+import { useEffect, useRef, type ReactNode } from "react"
 
 const animationVariants = {
   'slide-right': {
@@ -45,14 +44,24 @@ type Props = {
 }
 
 export default function AnimatedElement({ children, animation, duration = 0.5, delay }: Props) {
+  const ref = useRef(null)
   const variant = animationVariants[animation].variants
+  const isInView = useInView(ref, { once: true })
+  const controls = useAnimation()
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start('visible')
+    }
+  }, [isInView])
 
   return (
     <motion.div
+      ref={ref}
       className='w-fit'
       variants={variant}
       initial="hidden"
-      animate="visible"
+      animate={controls}
       transition={{ duration, delay: delay ?? 0 }}
     >
       {children}
