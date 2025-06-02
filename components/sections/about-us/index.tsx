@@ -25,7 +25,7 @@ export default function AboutUsSection() {
             <h2
               className="w-full text-2xl lg:text-3xl leading-8 md:leading-9 font-semibold text-primary"
             >
-              <AnimatedElement animation="slide-right">
+              <AnimatedElement animation="slide-right" className="w-full text-center">
                 SOBRE NÓS
               </AnimatedElement>
             </h2>
@@ -51,14 +51,14 @@ export default function AboutUsSection() {
           </AnimatedElement>
 
           {/* stats card */}
-          <AnimatedElement animation="slide-right" delay={0.4}>
+          <AnimatedElement animation="slide-right" className="w-full" delay={0.4}>
             <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 items-center justify-center gap-8 mt-8">
-              <StatsCard title="+ 3000" description="Clientes satisfeitos" className="motion-preset-expand motion-duration-1000 lg:motion-duration-1500" />
-              <StatsCard title="+ 10" description="Anos de experiência" className="motion-preset-expand motion-duration-1500 lg:motion-duration-[1.8s]" />
+              <StatsCard title="+ 3000" description="Clientes satisfeitos" />
+              <StatsCard title="+ 10" description="Anos de experiência" />
             </div>
           </AnimatedElement>
 
-          <div className="xl:hidden flex flex-col items-center justify-center gap-4 motion-preset-slide-up motion-duration-1500">
+          <div className="xl:hidden flex flex-col items-center justify-center gap-4">
             <AnimatedElement animation="slide-right" delay={0.5}>
               <h4 className="text-lg font-semibold text-primary my-3">Saiba onde nos encontrar</h4>
             </AnimatedElement>
