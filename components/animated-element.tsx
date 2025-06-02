@@ -61,7 +61,7 @@ export default function AnimatedElement({ children, animation, duration = 0.5, d
   return (
     <motion.div
       ref={ref}
-      className={cn('w-fit', className)}
+      className={cn('', className)}
       variants={variant}
       initial="hidden"
       animate={controls}
