@@ -52,6 +52,8 @@
   /* customs */
   --spacing-container: 1440px;
   --spacing-section: calc(var(--spacing) * 8);
+
+  --breakpoint-xs: 30rem;
 }
 
 :root {
