@@ -26,7 +26,7 @@
 
 <!-- ABOUT THE PROJECT -->
 
-## About The Project <code>UNFINISHED</code>
+## About The Project
 
 Uma landing page para a empresa Autoamcert Sistemas descrevendo seus serviços, produtos, entre outras informações.
 
